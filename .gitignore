@@ -1,0 +1,6 @@
+.idea
+bin
+tmp
+
+.env
+config.json

@@ -1,0 +1,48 @@
+{
+  "port": 8003,
+  "appName": "payment-service",
+  "appEnv": "local",
+  "signatureKey": "",
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "name": "",
+    "username": "",
+    "password": "",
+    "maxOpenConnection": 10,
+    "maxLifetimeConnection": 10,
+    "maxIdleConnection": 10,
+    "maxIdleTime": 10
+  },
+  "rateLimiterMaxRequest": 1000,
+  "rateLimiterTimeSecond": 60,
+  "internalService": {
+    "user": {
+      "host": "",
+      "signatureKey": ""
+    }
+  },
+  "gcsType": "",
+  "gcsProjectID": "",
+  "gcsPrivateKeyID": "",
+  "gcsPrivateKey": "",
+  "gcsClientEmail": "",
+  "gcsClientID": "",
+  "gcsAuthURI": "",
+  "gcsTokenURI": "",
+  "gcsAuthProviderX509CertURL": "",
+  "gcsClientX509CertURL": "",
+  "gcsUniverseDomain": "",
+  "gcsBucketName": "",
+  "kafka": {
+    "brokers": ["localhost:9092"],
+    "timeoutInMs": 100,
+    "maxRetry": 3,
+    "topic": ""
+  },
+  "midtrans": {
+    "serverKey": "",
+    "clientKey": "",
+    "isProduction": false
+  }
+}
