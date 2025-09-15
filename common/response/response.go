@@ -39,7 +39,7 @@ func HttpResponse(param ParamHTTPResp) {
 	if param.Message != nil {
 		message = *param.Message
 	} else if param.Err != nil {
-		if errConstant.ErrorMapping(param.Err) {
+		if errConstant.ErrMapping(param.Err) {
 			message = param.Err.Error()
 		}
 	}
