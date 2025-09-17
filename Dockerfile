@@ -1,7 +1,7 @@
 # do something
 FROM surnet/alpine-wkhtmltopdf:3.20.2-0.12.6-full as builder
 
-FROM golang:1.22.7-alpine3.20
+FROM golang:1.24-alpine
 
 RUN mkdir /app
 RUN apk update && \
