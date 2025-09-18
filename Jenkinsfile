@@ -40,8 +40,8 @@ pipeline {
       steps {
         script {
           echo "GIT_BRANCH: ${env.GIT_BRANCH}"
-          if (env.GIT_BRANCH == 'origin/main') {
-            env.TARGET_BRANCH = 'main'
+          if (env.GIT_BRANCH == 'origin/master') {
+            env.TARGET_BRANCH = 'master'
           } else if (env.GIT_BRANCH == 'origin/development') {
             env.TARGET_BRANCH = 'development'
           }
