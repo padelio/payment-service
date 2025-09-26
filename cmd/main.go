@@ -23,6 +23,7 @@ import (
 	"github.com/didip/tollbooth/limiter"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
+	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )
 
@@ -97,6 +98,8 @@ var command = &cobra.Command{
 		group := router.Group("/api/v1")
 		route := routes.NewRouteRegistry(controller, group, client)
 		route.Serve()
+
+		logrus.Printf("KAFKA CONFIG:\n%+v", config.Config.Kafka)
 
 		port := fmt.Sprintf(":%d", config.Config.Port)
 		router.Run(port)
