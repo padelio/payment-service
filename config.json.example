@@ -9,6 +9,7 @@
     "name": "",
     "username": "",
     "password": "",
+    "sslmode": "disable",
     "maxOpenConnection": 10,
     "maxLifetimeConnection": 10,
     "maxIdleConnection": 10,

@@ -41,6 +41,7 @@ type Database struct {
 	Name                  string `json:"name"`
 	Username              string `json:"username"`
 	Password              string `json:"password"`
+	SSLMode               string `json:"sslmode"`
 	MaxOpenConnections    int    `json:"maxOpenConnections"`
 	MaxLifeTimeConnection int    `json:"maxLifeTimeConnection"`
 	MaxIdleConnections    int    `json:"maxIdleConnections"`
